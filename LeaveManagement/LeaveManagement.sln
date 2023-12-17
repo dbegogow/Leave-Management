@@ -3,9 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3414425-A26D-412F-A457-0F4A34663C27}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C90C0C39-2723-4344-8498-2722FBA9D821}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{6D77B9C7-4DF9-4089-8CF2-D2EF61797130}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{89341608-3E55-45DC-922A-7E515F435E2B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{0907DB0D-A60D-4383-A073-E64BABF71B46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Domain", "LeaveManagement.Domain\LeaveManagement.Domain.csproj", "{6B096314-5025-4A05-B17C-5DB5A1FCA45F}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6B096314-5025-4A05-B17C-5DB5A1FCA45F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B096314-5025-4A05-B17C-5DB5A1FCA45F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B096314-5025-4A05-B17C-5DB5A1FCA45F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B096314-5025-4A05-B17C-5DB5A1FCA45F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6D77B9C7-4DF9-4089-8CF2-D2EF61797130} = {B3414425-A26D-412F-A457-0F4A34663C27}
+		{89341608-3E55-45DC-922A-7E515F435E2B} = {B3414425-A26D-412F-A457-0F4A34663C27}
+		{C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB} = {B3414425-A26D-412F-A457-0F4A34663C27}
+		{0907DB0D-A60D-4383-A073-E64BABF71B46} = {B3414425-A26D-412F-A457-0F4A34663C27}
+		{6B096314-5025-4A05-B17C-5DB5A1FCA45F} = {89341608-3E55-45DC-922A-7E515F435E2B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7870C99C-0570-49BA-9CC2-E0943AE251CE}
