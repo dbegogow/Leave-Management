@@ -3,7 +3,7 @@
 public interface IGenericRepository<T>
     where T : class
 {
-    Task<T> GetAsync();
+    Task<IEnumerable<T>> GetAsync();
 
     Task<T> GetByIdAsync(string id);
 
