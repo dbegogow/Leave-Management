@@ -5,7 +5,7 @@ public interface IGenericRepository<T>
 {
     Task<IEnumerable<T>> GetAsync();
 
-    Task<T> GetByIdAsync(string id);
+    Task<T> GetByIdAsync(int id);
 
     Task<T> CreateAsync(T entity);
 
