@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 
 using LeaveManagement.Application.Contracts.Persistence;
+using LeaveManagement.Application.Exceptions;
 
 using MediatR;
 
@@ -19,6 +20,11 @@ public class DeleteLeaveTypeCommandHandler : IRequestHandler<DeleteLeaveTypeComm
         CancellationToken cancellationToken)
     {
         var leaveTypeToDelete = await this.leaveTypeRepository.GetByIdAsync(request.Id);
+
+        if (leaveTypeToDelete == null)
+        {
+            throw new NotFoundException(nameof(LeaveType), request.Id);
+        }
 
         await this.leaveTypeRepository.DeleteAsync(leaveTypeToDelete);
 
