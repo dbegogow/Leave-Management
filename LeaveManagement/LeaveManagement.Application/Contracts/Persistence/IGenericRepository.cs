@@ -1,7 +1,9 @@
 ﻿namespace LeaveManagement.Application.Contracts.Persistence;
 
+using LeaveManagement.Domain.Common;
+
 public interface IGenericRepository<T>
-    where T : class
+    where T : BaseEntity
 {
     Task<IReadOnlyCollection<T>> GetAsync();
 

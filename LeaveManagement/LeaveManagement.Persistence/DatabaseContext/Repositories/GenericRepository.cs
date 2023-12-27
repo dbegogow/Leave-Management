@@ -4,11 +4,12 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using LeaveManagement.Application.Contracts.Persistence;
+using LeaveManagement.Domain.Common;
 
 using Microsoft.EntityFrameworkCore;
 
 public class GenericRepository<T> : IGenericRepository<T>
-    where T : class
+    where T : BaseEntity
 {
     protected readonly HrDatabaseContext context;
 
@@ -16,10 +17,14 @@ public class GenericRepository<T> : IGenericRepository<T>
         => this.context = context;
 
     public async Task<IReadOnlyCollection<T>> GetAsync()
-        => await this.context.Set<T>().ToListAsync();
+        => await this.context.Set<T>()
+            .AsNoTracking()
+            .ToListAsync();
 
     public async Task<T> GetByIdAsync(int id)
-        => await this.context.Set<T>().FindAsync(id);
+        => await this.context.Set<T>()
+            .AsNoTracking()
+            .FirstOrDefaultAsync(q => q.Id == id);
 
     public async Task CreateAsync(T entity)
     {
