@@ -19,7 +19,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Domain", "L
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Application", "LeaveManagement.Application\LeaveManagement.Application.csproj", "{5B369CA5-3B29-447B-B3D4-5C5DA30E9AC0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Persistence", "LeaveManagement.Persistence\LeaveManagement.Persistence.csproj", "{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Persistence", "LeaveManagement.Persistence\LeaveManagement.Persistence.csproj", "{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Infrastructure", "LeaveManagement.Infrastructure\LeaveManagement.Infrastructure.csproj", "{A7803189-4D41-40EC-B209-E68B9BBF66A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7803189-4D41-40EC-B209-E68B9BBF66A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7803189-4D41-40EC-B209-E68B9BBF66A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7803189-4D41-40EC-B209-E68B9BBF66A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7803189-4D41-40EC-B209-E68B9BBF66A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{6B096314-5025-4A05-B17C-5DB5A1FCA45F} = {89341608-3E55-45DC-922A-7E515F435E2B}
 		{5B369CA5-3B29-447B-B3D4-5C5DA30E9AC0} = {89341608-3E55-45DC-922A-7E515F435E2B}
 		{5FE1603A-EAE3-4AAC-8BE2-0ADF01A1E6D8} = {C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB}
+		{A7803189-4D41-40EC-B209-E68B9BBF66A1} = {C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7870C99C-0570-49BA-9CC2-E0943AE251CE}
