@@ -16,6 +16,5 @@ public class BadRequestException : Exception
             .Select(e => e.ErrorMessage)
             .ToList();
 
-
     public IReadOnlyCollection<string>? ValidationErrors { get; }
 }

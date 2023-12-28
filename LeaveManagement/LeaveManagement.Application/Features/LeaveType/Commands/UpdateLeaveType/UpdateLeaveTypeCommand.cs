@@ -3,6 +3,7 @@
 using MediatR;
 
 public record UpdateLeaveTypeCommand(
+    int Id,
     string Name,
     int DefaultDays)
     : IRequest<Unit>;
