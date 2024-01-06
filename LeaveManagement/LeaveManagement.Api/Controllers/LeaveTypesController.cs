@@ -12,11 +12,11 @@
 
     [Route("api/[controller]")]
     [ApiController]
-    public class LeaveTypeController : ControllerBase
+    public class LeaveTypesController : ControllerBase
     {
         private readonly IMediator mediator;
 
-        public LeaveTypeController(IMediator mediator)
+        public LeaveTypesController(IMediator mediator)
             => this.mediator = mediator;
 
         [HttpGet]
@@ -26,6 +26,7 @@
 
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<LeaveTypeDto>> Get(int id)
             => Ok(await this.mediator.Send(new GetLeaveTypeDetailsQuery(id)));
 
