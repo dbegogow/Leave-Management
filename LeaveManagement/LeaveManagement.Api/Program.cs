@@ -12,7 +12,7 @@ builder.Services
     .AddPersistenceServices(configuration)
     .AddEndpointsApiExplorer()
     .AddSwaggerGen()
-    .AddCors(options => 
+    .AddCors(options =>
         options.AddPolicy(
             "all",
             builder => builder.
@@ -25,13 +25,13 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwagger()
+       .UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
-app.UseAuthorization();
+app
+    .UseHttpsRedirection()
+    .UseAuthorization();
 
 app.MapControllers();
 
