@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class LeaveAllocationRepository : GenericRepository<LeaveAllocation>, ILeaveAllocationRepository
 {
-    public LeaveAllocationRepository(HrDatabaseContext context) : base(context)
+    public LeaveAllocationRepository(LeaveManagementDatabaseContext context) : base(context)
     {
     }
 

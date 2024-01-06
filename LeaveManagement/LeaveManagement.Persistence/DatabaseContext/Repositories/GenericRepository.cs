@@ -11,9 +11,9 @@ using Microsoft.EntityFrameworkCore;
 public class GenericRepository<T> : IGenericRepository<T>
     where T : BaseEntity
 {
-    protected readonly HrDatabaseContext context;
+    protected readonly LeaveManagementDatabaseContext context;
 
-    public GenericRepository(HrDatabaseContext context)
+    public GenericRepository(LeaveManagementDatabaseContext context)
         => this.context = context;
 
     public async Task<IReadOnlyCollection<T>> GetAsync()

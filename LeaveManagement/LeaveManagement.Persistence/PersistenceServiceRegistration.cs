@@ -14,8 +14,8 @@ public static class PersistenceServiceRegistration
         this IServiceCollection services,
         IConfiguration configuration)
         => services
-            .AddDbContext<HrDatabaseContext>(options => options
-                .UseSqlServer(configuration.GetConnectionString("HrDatabaseConnectionString")))
+            .AddDbContext<LeaveManagementDatabaseContext>(options => options
+                .UseSqlServer(configuration.GetConnectionString("LeaveManagementDatabaseConnectionString")))
             .AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>))
             .AddScoped<ILeaveTypeRepository, LeaveTypeRepository>()
             .AddScoped<ILeaveAllocationRepository, LeaveAllocationRepository>()

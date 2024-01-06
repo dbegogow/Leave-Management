@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class LeaveRequestRepository : GenericRepository<LeaveRequest>, ILeaveRequestRepository
 {
-    public LeaveRequestRepository(HrDatabaseContext context)
+    public LeaveRequestRepository(LeaveManagementDatabaseContext context)
         : base(context)
     {
     }

@@ -5,9 +5,9 @@ using LeaveManagement.Domain.Common;
 
 using Microsoft.EntityFrameworkCore;
 
-public class HrDatabaseContext : DbContext
+public class LeaveManagementDatabaseContext : DbContext
 {
-    public HrDatabaseContext(DbContextOptions<HrDatabaseContext> options)
+    public LeaveManagementDatabaseContext(DbContextOptions<LeaveManagementDatabaseContext> options)
         : base(options)
     {
     }
@@ -20,7 +20,7 @@ public class HrDatabaseContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(HrDatabaseContext).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(LeaveManagementDatabaseContext).Assembly);
 
         base.OnModelCreating(modelBuilder);
     }

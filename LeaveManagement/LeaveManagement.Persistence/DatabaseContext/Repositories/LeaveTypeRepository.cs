@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore;
 
 public class LeaveTypeRepository : GenericRepository<LeaveType>, ILeaveTypeRepository
 {
-    public LeaveTypeRepository(HrDatabaseContext context)
+    public LeaveTypeRepository(LeaveManagementDatabaseContext context)
         : base(context)
     {
     }
