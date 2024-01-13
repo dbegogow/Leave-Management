@@ -6,22 +6,15 @@ using System.Threading.Tasks;
 using LeaveManagement.Application.Contracts.Persistence;
 using LeaveManagement.Application.Exceptions;
 
-using AutoMapper;
 using MediatR;
 
 public class DeleteLeaveAllocationCommandHandler
     : IRequestHandler<DeleteLeaveAllocationCommand, Unit>
 {
     private readonly ILeaveAllocationRepository leaveAllocationRepository;
-    private readonly IMapper mapper;
 
-    public DeleteLeaveAllocationCommandHandler(
-        ILeaveAllocationRepository leaveAllocationRepository,
-        IMapper mapper)
-    {
-        this.leaveAllocationRepository = leaveAllocationRepository;
-        this.mapper = mapper;
-    }
+    public DeleteLeaveAllocationCommandHandler(ILeaveAllocationRepository leaveAllocationRepository)
+        => this.leaveAllocationRepository = leaveAllocationRepository;
 
     public async Task<Unit> Handle(
         DeleteLeaveAllocationCommand request,
