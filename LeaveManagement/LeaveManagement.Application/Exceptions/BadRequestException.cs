@@ -11,10 +11,7 @@ public class BadRequestException : Exception
 
     public BadRequestException(string message, ValidationResult validationResult)
         : base(message)
-        => this.ValidationErrors = validationResult
-            .Errors
-            .Select(e => e.ErrorMessage)
-            .ToList();
+        => this.ValidationErrors = validationResult.ToDictionary();
 
-    public IReadOnlyCollection<string>? ValidationErrors { get; }
+    public IDictionary<string, string[]>? ValidationErrors { get; }
 }

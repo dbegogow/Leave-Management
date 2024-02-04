@@ -1,3 +1,4 @@
+using LeaveManagement.Api.Middlewares;
 using LeaveManagement.Application;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Persistence;
@@ -34,5 +35,7 @@ app
     .UseAuthorization();
 
 app.MapControllers();
+
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.Run();
