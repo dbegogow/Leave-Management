@@ -1,15 +1,17 @@
 ﻿namespace LeaveManagement.Application.Features.LeaveRequest.Commands.ChangeLeaveRequestApproval;
 
-using AutoMapper;
+using System.Threading;
+using System.Threading.Tasks;
+
 using LeaveManagement.Application.Contracts.Email;
 using LeaveManagement.Application.Contracts.Persistence;
 using LeaveManagement.Application.Exceptions;
 using LeaveManagement.Application.Features.LeaveRequest.Commands.UpdateLeaveRequest;
 using LeaveManagement.Application.Logging;
 using LeaveManagement.Application.Models.Email;
+
+using AutoMapper;
 using MediatR;
-using System.Threading;
-using System.Threading.Tasks;
 
 public class ChangeLeaveRequestApprovalCommandHandler : IRequestHandler<ChangeLeaveRequestApprovalCommand, Unit>
 {
