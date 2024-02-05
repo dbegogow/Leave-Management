@@ -5,7 +5,7 @@ using LeaveManagement.Domain;
 
 using Moq;
 
-public class MockLeaveTypeRepository
+public static class MockLeaveTypeRepository
 {
     public static Mock<ILeaveTypeRepository> GetMockLeaveTypeRepository()
     {
