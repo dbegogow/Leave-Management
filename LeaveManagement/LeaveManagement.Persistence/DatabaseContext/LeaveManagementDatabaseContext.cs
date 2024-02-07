@@ -34,7 +34,7 @@ public class LeaveManagementDatabaseContext : DbContext
 
             if (entry.State == EntityState.Added)
             {
-                entry.Entity.DateModified = DateTime.Now;
+                entry.Entity.DateCreated = DateTime.Now;
             }
         }
 
