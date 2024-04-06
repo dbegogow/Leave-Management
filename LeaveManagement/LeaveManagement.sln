@@ -7,8 +7,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B3414425-A26
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{C90C0C39-2723-4344-8498-2722FBA9D821}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{6D77B9C7-4DF9-4089-8CF2-D2EF61797130}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{89341608-3E55-45DC-922A-7E515F435E2B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB}"
@@ -29,9 +27,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Application
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Persistance.IntegrationTests", "LeaveManagement.Persistance.IntegrationTests\LeaveManagement.Persistance.IntegrationTests.csproj", "{D93C96A7-4EA6-4E3F-8657-AE29B3DAF71D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.BlazorUI", "LeaveManagement.BlazorUI\LeaveManagement.BlazorUI.csproj", "{1209859F-D164-4EE7-880E-1EEB49CC5457}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaveManagement.Identity", "LeaveManagement.Identity\LeaveManagement.Identity.csproj", "{96295EF1-6603-45E5-AD52-1EDED6E84B2C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaveManagement.Identity", "LeaveManagement.Identity\LeaveManagement.Identity.csproj", "{96295EF1-6603-45E5-AD52-1EDED6E84B2C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -67,10 +63,6 @@ Global
 		{D93C96A7-4EA6-4E3F-8657-AE29B3DAF71D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D93C96A7-4EA6-4E3F-8657-AE29B3DAF71D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D93C96A7-4EA6-4E3F-8657-AE29B3DAF71D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1209859F-D164-4EE7-880E-1EEB49CC5457}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1209859F-D164-4EE7-880E-1EEB49CC5457}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1209859F-D164-4EE7-880E-1EEB49CC5457}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1209859F-D164-4EE7-880E-1EEB49CC5457}.Release|Any CPU.Build.0 = Release|Any CPU
 		{96295EF1-6603-45E5-AD52-1EDED6E84B2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{96295EF1-6603-45E5-AD52-1EDED6E84B2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{96295EF1-6603-45E5-AD52-1EDED6E84B2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -91,7 +83,6 @@ Global
 		{CA1A1D6E-8432-43E3-AB1B-E4EBE28E85D5} = {0907DB0D-A60D-4383-A073-E64BABF71B46}
 		{9B5FF3D7-40E0-4347-9199-08901944F95E} = {C90C0C39-2723-4344-8498-2722FBA9D821}
 		{D93C96A7-4EA6-4E3F-8657-AE29B3DAF71D} = {C90C0C39-2723-4344-8498-2722FBA9D821}
-		{1209859F-D164-4EE7-880E-1EEB49CC5457} = {6D77B9C7-4DF9-4089-8CF2-D2EF61797130}
 		{96295EF1-6603-45E5-AD52-1EDED6E84B2C} = {C6B2D73A-9E2E-4FD4-8889-EA89E314E7FB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

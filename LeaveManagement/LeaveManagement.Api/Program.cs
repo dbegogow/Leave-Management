@@ -1,5 +1,6 @@
 using LeaveManagement.Api.Middlewares;
 using LeaveManagement.Application;
+using LeaveManagement.Identity;
 using LeaveManagement.Infrastructure;
 using LeaveManagement.Persistence;
 
@@ -11,6 +12,7 @@ builder.Services
     .AddApplicationServices()
     .AddInfrastructureServices(configuration)
     .AddPersistenceServices(configuration)
+    .AddIdentityServices(configuration)
     .AddEndpointsApiExplorer()
     .AddSwaggerGen()
     .AddCors(options =>
@@ -32,6 +34,7 @@ if (app.Environment.IsDevelopment())
 
 app
     .UseHttpsRedirection()
+    .UseAuthentication()
     .UseAuthorization()
     .UseCors("all");
 
